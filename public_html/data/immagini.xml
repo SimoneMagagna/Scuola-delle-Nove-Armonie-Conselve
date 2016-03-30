@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<immagini xmlns="http://www.9armonie.com/immagini" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.9armonie.com/immagini immagini.xsd">
+    <immagine>
+        <src>../Foto/colpitori1@big.jpg</src>
+        <src_small>../Foto/colpitori1.jpg</src_small>
+        <alt> </alt>
+    </immagine>
+    <immagine>
+        <src>../Foto/colpitori2@big.jpg</src>
+        <src_small>../Foto/colpitori2.jpg</src_small>
+        <alt> </alt>
+    </immagine>
+	<immagine>
+		<src>../Foto/StageTaiChiMare@big.jpg</src>
+		<src_small>../Foto/StageTaiChiMare.jpg</src_small>
+		<alt>dfghj</alt>
+	</immagine>
+</immagini>

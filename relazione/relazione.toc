@@ -1,0 +1,29 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
+\contentsline {section}{\numberline {2}Utenti destinatari}{3}{section.2}
+\contentsline {section}{\numberline {3}Accessibilit\IeC {\`a}}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Separazione tra contenuto, presentazione e struttura}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Schema colori}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Tag meta}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Screen reader}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Facilitazioni per la navigazione}{6}{subsection.3.5}
+\contentsline {section}{\numberline {4}Usabilit\IeC {\`a}}{7}{section.4}
+\contentsline {section}{\numberline {5}Gerarchia dei file}{9}{section.5}
+\contentsline {section}{\numberline {6}Struttura}{10}{section.6}
+\contentsline {section}{\numberline {7}Presentazione}{11}{section.7}
+\contentsline {subsection}{\numberline {7.1}Divisione dei file}{11}{subsection.7.1}
+\contentsline {section}{\numberline {8}Comportamento}{12}{section.8}
+\contentsline {subsection}{\numberline {8.1}Fresco.js}{12}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Backstretch.js}{13}{subsection.8.2}
+\contentsline {section}{\numberline {9}Gestione dei dati}{14}{section.9}
+\contentsline {subsection}{\numberline {9.1}XMLSchema}{14}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}XSLT}{14}{subsection.9.2}
+\contentsline {section}{\numberline {10}Perl}{15}{section.10}
+\contentsline {subsection}{\numberline {10.1}Pagine per i visitatori}{15}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Pagine di amministrazione}{15}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Funzioni comuni a pi\IeC {\`u} pagine}{15}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Gestione della sessione}{16}{subsection.10.4}
+\contentsline {section}{\numberline {11}Validazione e Test}{17}{section.11}
+\contentsline {subsection}{\numberline {11.1}Validazione}{17}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Test}{17}{subsection.11.2}
+\contentsline {section}{Appendice \numberline {A}Organizzazione del gruppo}{19}{Appendice.1.A}

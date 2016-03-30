@@ -1,0 +1,205 @@
+
+
+h2 { display: inline-block;}
+
+
+
+
+.errore {
+	color: red;
+	margin-bottom: 3em;
+	text-align: center;
+}
+
+.goBack {
+	display: block;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.okMessage{
+	display: block;
+	text-align: center;
+}
+
+p.sessionInfo {
+	text-align: right;
+}
+
+/*Lista errori rilevati da javascript*/
+
+ul.listaErrori{
+	color: red;
+	width: 30%;
+	margin: 0 auto 1em auto;
+}
+
+
+
+/*Lista utenti --------------------------------------*/
+
+ul.listaUtenti {
+	margin: 2em auto;
+	padding:0;
+}
+
+ul.listaUtenti li{
+	clear: both;
+	list-style: none;
+	border: 1px solid chocolate;
+	margin-bottom: .2em;
+	padding: 1em;
+
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+
+ul.listaUtenti p {
+	vertical-align:middle;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Lista immagni --------------------------------------*/
+
+
+ul.listaImmagini {
+	margin: 2em auto;
+	padding:0;
+}
+
+ul.listaImmagini li{
+	clear: both;
+	list-style: none;
+	border: 1px solid chocolate;
+	margin-bottom: .2em;
+	padding: 1em;
+
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+
+
+ul.listaImmagini img{
+	display: inline-block;
+	margin-right: 2em;
+	vertical-align: middle;   
+}
+
+ul.listaImmagini p {
+	vertical-align:middle;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+/*Custom form */
+
+
+
+.customForm {
+	width: auto;
+	max-width: 80%;
+}
+
+.customForm input {
+	margin: 0;
+}
+
+.customForm textarea {
+	width: 98%;
+}
+
+.customForm .bottone {
+	width: auto;
+	padding: 0 1em;
+	margin: auto;
+}
+
+label.checkboxLabel {
+	display: inline-block;
+}
+input.checkbox{
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-left: .5em;
+}
+
+.smallForm{
+	width: 30%;
+}
+
+/* Form gestione immagni  ------------------------------------------------*/
+.formGestioneImmagini{
+	width: auto;
+	text-align: right;
+	margin:0;
+	padding: 0;
+	vertical-align:middle;
+	display: inline-block;
+	border: 0;
+}
+
+.formGestioneImmagini fieldset {
+	margin: 0;
+	border: 0;
+}
+
+
+.formGestioneImmagini button{
+	font-size: 1em;
+	padding: .3em 1em;
+}
+
+
+/* Form gestione news  ------------------------------------------------*/
+.formGestioneNews{
+	width: auto;
+	text-align: right;
+	margin:0 0 0 2em;
+	padding: 0;
+	vertical-align:middle;
+	display: inline-block;
+	border: 0;
+}
+
+.formGestioneNews fieldset {
+	margin: 0;
+	border: 0;
+}
+
+
+.formGestioneNews button{
+	font-size: 1em;
+	padding: .3em 1em;
+}
+
+
+/* Form gestione utenti  ------------------------------------------------*/
+.formGestioneUtenti{
+	width: auto;
+	text-align: right;
+	margin: .5em 0 0 2em;
+	padding: 0;
+	vertical-align:middle;
+	display: inline-block;
+	border: 0;
+}
+
+.formGestioneUtenti fieldset {
+	margin: 0;
+	border: 0;
+}
+
+
+.formGestioneUtenti button{
+	font-size: 1em;
+	padding: .3em 1em;
+}
+
+

@@ -1,0 +1,51 @@
+\section{Gerarchia dei file}
+I file che compongono il sito sono organizzati divisi su 3 cartelle:
+\begin{itemize}
+\item \textbf{cgi-bin:} cartella nella quale sono presenti tutti gli script \texttt{.cgi} e le varie librerie di supporto.;
+\item \textbf{data:} cartella nella quale sono contenuti tutti i file xml e i relativi XMLSchema;
+\item \textbf{public$\_$html:} cartella nella quale sono presenti tutti i file \texttt{.html} e le sotto cartelle:
+\begin{itemize}
+\item \textit{•}{css:} cartella contenente i file \texttt{.css}
+\item \textit{Foto:} cartella contenente tutte le foto presenti nel sito;
+\item \textit{Immagini:} cartella contente tutte le immagini presenti nel sito;
+\item \textit{jquery:} cartella contenete il codice della libreria jQuery;
+\item \textit{js:} cartella contente i vari script realizzati in JavaScript.
+\end{itemize}
+
+\end{itemize}
+
+
+\section{Struttura}
+All'interno della cartella \texttt{public$\_$html} si trovano i file delle pagine statiche \texttt{.html}. 
+
+La maggior parte del progetto è stata realizzata secondo lo standard XHTML 1.0 Strict, fa eccezione la pagina contenente la galleria fotografica che è stata realizzata in HTML5, in modo da poter utilizzare la libreria JavaScript \texttt{fresco.js}, per maggior informazioni su questa libreria si rimanda alla sezione \ref{fresco}.\\
+
+Le pagine statiche che costituiscono il sito sono:
+\begin{itemize}
+\item \textbf{index.html:} Questa pagina è vuota,
+
+\item \textbf{chi$\_$siamo.html:} pagina di descrizione della scuola e della sua storia
+
+\item \textbf{sedi$\_$e$\_$corsi.html:} pagina dove vengono riportate le informazioni sulle sedi e sui corsi tenuti dalla scuola
+ 
+\item \textbf{tai$\_$chi$\_$chuan.html:}  pagina dedicata alla descrizione dell'arte marziale con il rispettivo piano di studi
+
+\item \textbf{kung$\_$fu.html:} pagina dedicata alla descrizione dell'arte marziale con il rispettivo piano di studi
+
+\item \textbf{maestro.html:} pagina dedicata al maestro della scuola
+
+\item \textbf{istruttori.html:} pagina in nella quale è presente un elenco degli istruttori della scuola e il link alle pagine specifiche di descrizione di ognuno:
+    \begin{itemize}
+    \item simone$\_$magagna.html
+    \item lara$\_$michielli.html
+    \item marco$\_$berto.html
+    \end{itemize}
+					
+\item \textbf{foto.html:} pagina ricca di foto che ritraggono allenamenti e stage tenuti dai praticanti della scuola. Possiede una versione .cgi (verrà illustrata in seguito) che permette di visualizzare le foto che periodicamente l'utente amministratore caricherà nel sito. La pagina .html è dunque deprecata;
+
+\item \textbf{mappa.html:} pagina in cui è presentata la struttura gerarchica del sito dove ogni voce è un link alla pagina indicata;
+
+\item \textbf{area$\_$riservata.html:} pagina attraverso la quale l'utente amministratore potra effettuare il login per accedere alle funzionalità di amministratore che verranno illustrate in seguito.
+
+
+\end{itemize}

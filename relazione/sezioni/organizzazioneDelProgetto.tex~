@@ -1,0 +1,44 @@
+\section{Gerarchia dei file}
+I file che compongono il sito sono organizzati su 3 cartelle:
+\begin{itemize}
+\item \textbf{cgi-bin:} cartella nella quale sono presenti tutti gli script \texttt{.cgi} e le varie librerie di supporto;
+\item \textbf{data:} cartella nella quale sono contenuti tutti i file xml e i relativi XMLSchema;
+\item \textbf{public$\_$html:} cartella nella quale sono presenti tutti i file \texttt{.html} e le sotto cartelle:
+\begin{itemize}
+\item \textit{css:} cartella contenente i file \texttt{.css};
+\item \textit{Foto:} cartella contenente tutte le foto presenti nel sito;
+\item \textit{Immagini:} cartella contente tutte le immagini presenti nel sito;
+\item \textit{jquery:} cartella contenete il codice della libreria jQuery;
+\item \textit{js:} cartella contente i vari script realizzati in JavaScript.
+\end{itemize}
+
+\end{itemize}
+
+
+\section{Struttura}
+All'interno della cartella \texttt{public$\_$html} si trovano i file delle pagine statiche \texttt{.html}. \\
+La maggior parte del progetto è stata realizzata secondo lo standard XHTML 1.0 Strict, fa eccezione la pagina contenente la galleria fotografica che è stata realizzata in HTML5, in modo da poter utilizzare la libreria JavaScript \texttt{fresco.js}, per maggior informazioni riguardo questa libreria si rimanda alla sezione \ref{fresco}.\\
+Le pagine statiche che costituiscono il sito sono:
+\begin{itemize}
+\item \texttt{index.html:} Questa pagina ha il solo scopo di reindirizzare l'utente verso la vera home page del sito \texttt{cgi-bin/index.cgi};
+
+\item \texttt{chi$\_$siamo.html:} Pagina di descrizione della scuola e della sua storia;
+
+\item \texttt{sedi$\_$e$\_$corsi.html:} Pagina dove vengono riportate le informazioni sulle sedi e sui corsi tenuti dalla scuola;
+ 
+\item \texttt{tai$\_$chi$\_$chuan.html:} Pagina dedicata alla descrizione dell'arte marziale con il rispettivo piano di studi;
+
+\item \texttt{kung$\_$fu.html:} Pagina dedicata alla descrizione dell'arte marziale con il rispettivo piano di studi;
+
+\item \texttt{maestro.html:} Pagina dedicata al maestro della scuola;
+
+\item \texttt{istruttori.html:} Pagina nella quale è presente un elenco degli istruttori della scuola e il link alle pagine specifiche di descrizione di ognuno:
+    \begin{itemize}
+    \item \texttt{simone$\_$magagna.html};
+    \item \texttt{lara$\_$michielli.html};
+    \item \texttt{marco$\_$berto.html}.
+    \end{itemize}
+					
+\item \texttt{mappa.html:} Pagina in cui è presentata la struttura gerarchica del sito dove ogni voce è un link alla pagina indicata.
+
+\end{itemize}

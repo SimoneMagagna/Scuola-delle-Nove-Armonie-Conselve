@@ -1,0 +1,11 @@
+\section{Abstract}
+
+Il progetto sviluppato si propone di implementare un sito internet che illustri le attività, la storia e le arti praticate della Scuola delle 9 Armonie Conselve, nella quale lo studente, e membro del gruppo di sviluppo di questo progetto, Simone Magagna svolge l'attività di istruttore. \\
+La scuola pratica due distinte ma complementari arti marziali di origine cinese e tibetana: T'ai Chi Chuan e Kung Fu. Per ognuna delle sedi (di Conselve e di Ponte San Nicolò) vengono tenuti diversi corsi sullo studio di queste arti.\\
+Il sito ha principalmente uno scopo informativo, riportando tutte le informazioni riguardanti la scuola, perciò non vi sarà alcuna interazione con l'utente, che potrà così solo visualizzare le pagine e leggerne le informazioni riportate. L'interazione avverrà comunque con un utente amministratore, il quale avrà la possibilità di inserire le news nell'home page e nuove foto in maniera dinamica, accendendo da una apposita pagina per lui creata: “Area riservata”.\\
+Il sito è stato sviluppato con l'intenzione di essere poi pubblicato in internet, dunque si è data molta importanza alla sua presentazione grafica e alla sua usabilità, rispettando comunque gli standard W3C, la separazione tra struttura, presentazione, comportamento e le regole di accessibilità richieste.
+
+\section{Utenti destinatari}
+
+Il sito e destinato a tutti gli utenti che vogliono iniziare a frequentare uno dei corsi offerti dalla Scuola delle 9 Armonie Conselve, ma anche per coloro che ricercano solo informazioni sulle arti marziali cinesi del T'ai C'hi Chuan e del Kung Fu.\\
+All'interno del footer vi sono oltretutto i link alle pagine della scuola sui principali social network, pagine che terranno aggiornati gli utenti sulle attività svolte mensilmente dalla scuola.

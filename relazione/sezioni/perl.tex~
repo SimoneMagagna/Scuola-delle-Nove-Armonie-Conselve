@@ -1,0 +1,58 @@
+\section{Perl}
+
+Perl viene usato per gestire la visualizzazione e la gestione delle informazioni dinamiche.
+Gli script CGI si possono divire in due sezioni:
+\begin{itemize}
+\item Quelli che generano le pagine visualizzabili dai visitatori;
+\item Quelli che generano le pagine legate all'amministrazione del sito;
+\end{itemize}
+
+
+\subsection{Pagine per i visitatori}
+
+Queste pagine vengono generate leggendo i dati dai relativi file XML e vengono create con uno stile analogo a quello delle altre pagine del sito.
+L'utente in questo caso può solamente visualizzare i contenuti, senza poterli modificare.\\
+Le pagine che rientrano in questa categoria sono:
+\begin{itemize}
+\item \texttt{index.cgi}: Rappresenta la pagina iniziale del sito, vengono visualizzate la ultime 3 news inserite e per questo è stato necessario utilizzare il Perl per generarla;
+\item \texttt{news.cgi}: Rappresenta l'archivio delle news, contiene tutte le news presenti nel file \texttt{news.xml}, ordinate in ordine cronologico inverso;
+\item \texttt{dettaglioNews.cgi}: Viene utilizzata per visualizzare una singola notizia;
+\item \texttt{foto.cgi}: Galleria di fotografie realizzata a partire dai dati contenuti nel file \texttt{immagini.xml}.
+\end{itemize}
+
+
+\subsection{Pagine di amministrazione}
+
+Per accedere a queste pagine è necessario effettuare il login in modo da essere sicuri che solo le persone autorizzate riescano ad accedere a questa area del sito.
+Una volta che l'utente ha effettuato il login potrà gestire le news e le foto.
+Inoltre, se l'utente autenticato è un amministratore del sito potrà anche gestire gli utenti.\\
+Per offrire queste funzionalità sono stati creati vari script Perl che permettono di inserire, cancellare e, quando ha senso, modificare i dati presenti nei vari file \texttt{.xml}.\\
+A questa tipologia di pagine appartengo anche le pagine generate per gestire il login/logout e la pagina generata dallo script \texttt{noauth.cgi}, che viene mostrata quando l'utente tenta di accedere ad una pagina senza averne il permesso.
+
+\subsection{Funzioni comuni a più pagine}
+
+Per semplificare la gestione del codice ed aumentarne la manutenibilità sono state create 3 "librerie":
+\begin{itemize}
+\item \texttt{customHtmlFunction.pl}: che contiene le funzioni relative alla stampa delle parti HTML comuni a più pagine, come per esempio la navbar;
+\item \texttt{sessionHelper.pl}: che contiene le funzioni relative alla gestione delle sessioni;
+\item \texttt{funzioni.pl}: che contiene le funzioni \textit{general purpose} per il controllo dell'input e gestione dei file.
+\end{itemize}
+
+
+\subsection{Gestione della sessione}
+
+Se il login avviene con successo viene creata una sessione sfruttando le funzioni messe a disposizione dalla libreria \texttt{sessionHelper.pl}.\\
+Tra le varie funzioni offerte è presente la funzione \texttt{createSession()} che riceve come parametri:
+\begin{itemize}
+\item L'indirizzo email dell'utente che ha effettuato il login;
+\item Il livello di autorizzazione dell'utente;
+\item Un riferimento ad un oggetto \texttt{CGI}, necessario per creare il cookie.
+\end{itemize}
+Essendo l'id della sessione comunicato al cliente tramite cookie è necessario che il browser del client abbia la recezione dei cookie abilitati, altrimenti non sarà possibile fare il login.\\
+Il livello di autorizzazione memorizzato nella sessione può assumere i seguenti valori:
+\begin{itemize}
+\item \textbf{1}: l'utente corrente è un utente dello staff e di conseguenza può gestire le news e le foto;
+\item \textbf{2}: l'utente corrente è un amministratore del sito che può gestire anche gli utenti.
+\end{itemize}
+Il livello di autorizzazione viene utilizzato nei vari script per verificare se l'utente ha sufficienti permessi per visualizzare la pagina. Nel caso l'utente non disponga dei permessi necessari verrà segnalato l'errore indirizzandolo alla pagina \texttt{noauth.cgi}.\\
+La sessione viene distrutta o dopo un periodo di inattività oppure quando l'utente sceglie di effettuare il logout.

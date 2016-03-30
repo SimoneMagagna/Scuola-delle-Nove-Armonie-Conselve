@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<notizie xmlns="http://www.9armonie.com/news" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.9armonie.com/news news.xsd" nextid="5">
+    <news id="1">
+        <data>2014-12-18</data>
+        <ora>12:00:00</ora>
+        <titolo>Sito in costruzione</titolo>
+        <descrizione>Sito sviluppato per il progetto di Tecnologie Web dell'Universit&#xE0; degli Studi di Padova</descrizione>
+    </news>
+    <news id="2">
+        <data>2014-12-18</data>
+        <ora>12:00:00</ora>
+        <titolo>News</titolo>
+        <descrizione>Sono una news di prova</descrizione>
+    </news>
+    <news id="3">
+        <data>2014-12-19</data>
+        <ora>12:00:00</ora>
+        <titolo>Terza news</titolo>
+        <descrizione>Sono una notizia di prova</descrizione>
+    </news>
+	<news id="4">
+		<data>2015-01-31</data>
+		<ora>19:34:33</ora>
+		<titolo>Buon Anno</titolo>
+		<descrizione>La scuola delle 9 Armonie di Conselve coglie l'occasione per auguare a tutti gli iscritti un felice anno nuovo.</descrizione>
+	</news>
+</notizie>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<utenti xmlns="http://www.9armonie.com/utenti" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.9armonie.com/utenti utenti.xsd" nextid="3">
+    <utente amministratore="true" id="1">
+        <nome>Giacomo </nome>
+        <cognome>Manzoli</cognome>
+        <email>giacomo.manzoli@gmail.com</email>
+        <password>1234</password>
+    </utente>
+<utente amministratore="true" id="2">
+		<nome>Simone</nome>
+		<cognome>Magana</cognome>
+		<email>simone@9armonie.it</email>
+		<password>asdasd</password>
+	</utente>
+</utenti>

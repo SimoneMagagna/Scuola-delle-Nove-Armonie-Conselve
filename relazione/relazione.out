@@ -1,0 +1,28 @@
+\BOOKMARK [1][-]{section.1}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.2}{Utenti destinatari}{}% 2
+\BOOKMARK [1][-]{section.3}{Accessibilit\340}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Separazione tra contenuto, presentazione e struttura}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Schema colori}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Tag meta}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Screen reader}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Facilitazioni per la navigazione}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Usabilit\340}{}% 9
+\BOOKMARK [1][-]{section.5}{Gerarchia dei file}{}% 10
+\BOOKMARK [1][-]{section.6}{Struttura}{}% 11
+\BOOKMARK [1][-]{section.7}{Presentazione}{}% 12
+\BOOKMARK [2][-]{subsection.7.1}{Divisione dei file}{section.7}% 13
+\BOOKMARK [1][-]{section.8}{Comportamento}{}% 14
+\BOOKMARK [2][-]{subsection.8.1}{Fresco.js}{section.8}% 15
+\BOOKMARK [2][-]{subsection.8.2}{Backstretch.js}{section.8}% 16
+\BOOKMARK [1][-]{section.9}{Gestione dei dati}{}% 17
+\BOOKMARK [2][-]{subsection.9.1}{XMLSchema}{section.9}% 18
+\BOOKMARK [2][-]{subsection.9.2}{XSLT}{section.9}% 19
+\BOOKMARK [1][-]{section.10}{Perl}{}% 20
+\BOOKMARK [2][-]{subsection.10.1}{Pagine per i visitatori}{section.10}% 21
+\BOOKMARK [2][-]{subsection.10.2}{Pagine di amministrazione}{section.10}% 22
+\BOOKMARK [2][-]{subsection.10.3}{Funzioni comuni a pi\371 pagine}{section.10}% 23
+\BOOKMARK [2][-]{subsection.10.4}{Gestione della sessione}{section.10}% 24
+\BOOKMARK [1][-]{section.11}{Validazione e Test}{}% 25
+\BOOKMARK [2][-]{subsection.11.1}{Validazione}{section.11}% 26
+\BOOKMARK [2][-]{subsection.11.2}{Test}{section.11}% 27
+\BOOKMARK [1][-]{Appendice.1.A}{Appendice Organizzazione del gruppo}{}% 28

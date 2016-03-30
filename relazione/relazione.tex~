@@ -1,0 +1,210 @@
+\newcommand{\documenttitle}{Relazione progetto Tecnologie Web}
+\newcommand{\version}{1.2.0}
+\newcommand{\addressedto}{ \\ & }
+\newcommand{\editorialstaff}{Simone Magagna 1009467 \\ & Giacomo Manzoli 1049820 \\ & Manuel Sgaravato matricola \\ & Andrea Rettore matricola}
+\newcommand{\referente}{Simone Magagna \\ & simone.magagna@studenti.unipd.it}
+\newcommand{\approvalstaff}{}
+\newcommand{\use}{Interno}
+
+\newcommand{\scuola}{Scuola 9 Armonie Conselve}
+
+
+\input{template/layout.tex}
+\begin{document}
+\input{template/titlePage.tex}
+
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+
+
+\section{Abstract}
+
+Il progetto sviluppato si propone di implementare un sito internet che illustri le attività, la storia e le arti praticate della Scuola delle 9 Armonie Conselve, nella quale lo studente, e membro del gruppo di sviluppo di questo progetto, Simone Magagna svolge l'attività di istruttore. \\
+La scuola pratica due distinte ma complementari arti marziali di origine cinese e tibetana: T'ai Chi Chuan e Kung Fu. Per ognuna delle sedi (di Conselve e di Ponte San Nicolò) vengono tenuti diversi corsi sullo studio di queste arti.\\
+Il sito ha principalmente uno scopo informativo, riportando tutte le informazioni riguardanti la scuola, perciò non vi sarà alcuna interazione con l'utente, che potrà così solo visualizzare le pagine e leggerne le informazioni riportate. L'interazione avverrà comunque con un utente amministratore, il quale avrà la possibilità di inserire le news nell'home page e nuove foto in maniera dinamica, accendendo da una apposita pagina per lui creata: “Area riservata”.\\
+Il sito è stato sviluppato con l'intenzione di essere poi pubblicato in internet, dunque si è data molta importanza alla sua presentazione grafica e alla sua usabilità, rispettando comunque gli standard W3C, la separazione tra struttura, presentazione, comportamento e le regole di accessibilità richieste.
+
+\section{Utenti destinatari}
+
+Il sito e destinato a tutti gli utenti che vogliono iniziare a frequentare uno dei corsi offerti dalla Scuola delle 9 Armonie Conselve, ma anche per coloro che ricercano solo informazioni sulle arti marziali cinesi del T'ai C'hi Chuan e del Kung Fu.\\
+All'interno del footer vi sono oltretutto i link alle pagine della scuola sui principali social network, pagine che terranno aggiornati gli utenti sulle attività svolte mensilmente dalla scuola.
+
+\section{Gerarchia dei file}
+
+La gerarchia dei file consegnati presenta due macro cartelle con relativa sotto cartelle ed è così strutturata:
+\begin{itemize}
+\item \textbf{cgi-bin:} cartella nella quale sono presenti tutti gli script .cgi e le varie librerie di supporto;
+\item \textbf{data:} cartella nella quale sono contenuti tutti i file xml e i relativi XMLSchema;
+\item \textbf{public$\_$html:} cartella nella quale sono presenti tutti i file .html e le seguenti sotto cartelle:
+
+\begin{itemize}
+\item \texttt{css:} cartella contenente i file .css
+\item \texttt{font:} 
+\item \texttt{Foto:} cartella contenente tutte le foto presenti nel sito
+\item \texttt{Immagini:} cartella contente tutte le immagini presenti nel sito
+\item \texttt{jquery:}
+\item \texttt{js:}
+\end{itemize}
+
+\end{itemize}
+
+
+\section{Struttura}
+
+All'interno della cartella public$\_$html si trovano i file delle pagine statiche .html. Il progetto è stato interamente sviluppato secondo lo standard XHTML 1.0 Strict, non avendo ritenuto necessario l'utilizzo di HTML5.\\
+Le che costituiscono il sito sono:
+\begin{itemize}
+\item \textbf{index.html:}  home page del sito nella quale è presente una breve presentazione della scuola. La pagina possiede una versione .cgi (verrà illustrata in seguito) che implementa la visualizzazione delle news pubblicate dall'utente amministratore. La pagina .html è dunque deprecata;
+
+\item \textbf{chi$\_$siamo.html:} pagina di descrizione della scuola e della sua storia
+
+\item \textbf{sedi$\_$e$\_$corsi.html:} pagina dove vengono riportate le informazioni sulle sedi e sui corsi tenuti dalla scuola
+ 
+\item \textbf{tai$\_$chi$\_$chuan.html:}  pagina dedicata alla descrizione dell'arte marziale con il rispettivo piano di studi
+
+\item \textbf{kung$\_$fu.html:} pagina dedicata alla descrizione dell'arte marziale con il rispettivo piano di studi
+
+\item \textbf{maestro.html:} pagina dedicata al maestro della scuola
+
+\item \textbf{istruttori.html:} pagina in nella quale è presente un elenco degli istruttori della scuola e il link alle pagine specifiche di descrizione di ognuno:
+    \begin{itemize}
+    \item simone$\_$magagna.html
+    \item lara$\_$michielli.html
+    \item marco$\_$berto.html
+    \end{itemize}
+					
+\item \textbf{foto.html:} pagina ricca di foto che ritraggono allenamenti e stage tenuti dai praticanti della scuola. Possiede una versione .cgi (verrà illustrata in seguito) che permette di visualizzare le foto che periodicamente l'utente amministratore caricherà nel sito. La pagina .html è dunque deprecata;
+
+\item \textbf{mappa.html:} pagina in cui è presentata la struttura gerarchica del sito dove ogni voce è un link alla pagina indicata;
+
+\item \textbf{area$\_$riservata.html:} pagina attraverso la quale l'utente amministratore potra effettuare il login per accedere alle funzionalità di amministratore che verranno illustrate in seguito.
+
+
+\end{itemize}
+
+
+\section{Presentazione} 
+
+Il sito è stato sviluppato interamente secondo lo standard CSS 2.1 fatta eccezione per alcuni comandi che si è ritenuto utile utilizzare dello standard CSS 3: $\_$ $\_$ $\_$ $\_$
+Nella cartella \texttt{public$\_$html/css} sono presenti i seguenti fogli di stile:
+\begin{itemize}
+\item \texttt{main.css}: modella lo stile di visualizzazione del sito per utente desktop;
+\item \texttt{mobile.css}: modella lo stile di visualizzazione del sito per utente mobile;
+\item \texttt{print.css}: modella lo stile di stampa delle pagine del sito;
+\item \texttt{amministratore.css}: modella lo stile di visualizzazione delle pagine a cui potrà accedere solo lo staff;
+\item \texttt{fresco.css}: .
+\end{itemize}
+
+
+
+
+\section{Comportamento}
+
+
+
+
+
+\section{Gestione dei dati}
+
+Il sito presenta 3 tipi di contenuti che possono essere modificati da parte dagli utenti autorizzati:
+\begin{itemize}
+\item \textbf{Immagini}: le foto che vengono visualizzate nella galleria fotografica;
+\item \textbf{News}: le notizie che vengono mostrate sia nell'homepage sia nell'apposita sezione;
+\item \textbf{Utenti}: gli amministratori del sito possono gestire gli utenti autorizzati a modificare i contenuti dinamici del sito.
+\end{itemize}
+Questi dati vengono memorizzati negli omonimi file \texttt{.xml} presenti nella cartella \texttt{data}.
+
+\subsection{XMLSchema}
+Per verificare la validità dei dati sono stati creati degli appositi XMLSchema che definisco i vari tag che possono comparire nei file \texttt{.xml} e, quando necessario, i vincoli di unicità. \\
+Gli schemi \texttt{utenti.xsd} e \texttt{news.xsd} definiscono infatti, dei vincoli di unicità per gli id degli elementi e, nel caso degli utenti, viene definito anche il vincolo di unicità dell'indirizzo email.
+
+\subsection{XSLT}
+Per visualizzare il contenuto erano stati crearti dei template XSLT, tuttavia è risultato più pratico fare la conversione da XML a HTML sfruttando il gli script Perl e di conseguenza non sono stati usati.
+
+
+
+
+\section{Perl}
+
+Perl viene usato per gestire la visualizzazione e la gestione delle informazione dinamiche.
+Gli script CGI si possono divire in due sezioni:
+\begin{itemize}
+\item Quelli che generano le pagine visualizzabili dai visitatori;
+\item Quelli che generano le pagine legate all'amministrazione del sito;
+\end{itemize}
+
+
+\subsection{Pagine per i visitatori}
+
+Queste pagine vengono generate leggendo i dati dai relativi file XML e vengono create con uno stile analogo a quello delle altre pagine del sito.
+L'utente in questo caso può solamente visualizzare i contenuti, senza poterli modificare.
+
+
+\subsection{Pagine di amministrazione}
+
+Per accedere a queste pagine è necessario effettuare il login in modo da essere sicuri che solo le persone autorizzate riescano ad accedere a questa area del sito.
+Una volta che l'utente ha effettuato il login potrà gestire le news e le foto.
+Inoletre, se l'utente autenticato è un amministratore del sito potrà anche gestire gli utenti.
+
+\subsection{Funzioni comuni }
+
+Per semplificare la gestione del codice ed aumentarne la manutenibilità sono state create 3 "librerie":
+\begin{itemize}
+\item \texttt{customHtmlFunction.pl}: che contiene le funzioni relative alla stampa delle parti HTML comuni a più pagine, come per esempio la navbar;
+\item \texttt{sessionHelper.pl}: che contiene le funzioni relative alla gestione delle sessioni;
+\item \texttt{funzioni.pl}: che contiene le funzioni \textit{general purpose} per il controllo dell'input e gestione dei file.
+\end{itemize}
+
+
+\subsection{Gestione della sessione}
+
+Se il login avviene con successo viene creata una sessione sfruttando le funzioni messe a disposizione dalla libreria \texttt{sessionHelper.pl}.\\
+Tra le varie funzioni offerte da \texttt{sessionHelper.pl}, c'è la funzione \texttt{createSession()} che riceve come parametri:
+\begin{itemize}
+\item L'indirizzo email dell'utente che ha effettuato il login;
+\item Il livello di autorizzazione dell'utente;
+\item Un riferimento ad un oggetto \texttt{CGI}, necessario per creare il cookie.
+\end{itemize}
+Essendo l'id della sessione comunicato al cliente tramite cookie è necessario che il browser del client abbia la recezione dei cookie abilitati, altrimenti non sarà possibile fare il login.\\
+Il livello di autorizzazione memorizzato nella sessione può assumere i seguenti valori:
+\begin{itemize}
+\item \textbf{1}: l'utente corrente è un utente dello staff e di conseguenza può gestire le news e le foto;
+\item \textbf{2}: l'utente corrente è un amministratore del sito che può gestire anche gli utenti.
+\end{itemize}
+Il livello di autorizzazione viene utilizzato nei vari script per verificare se l'utente ha sufficienti permessi per visualizzare la pagina. Nel caso l'utente non disponga dei permessi necessari verrà segnalato l'errore indirizzandolo alla pagina \texttt{noauth.cgi}.\\
+La sessione viene distrutta o dopo un periodo di inattività oppure quando l'utente sceglie di effettuare il logout.
+
+\section{Accessibilità}
+
+Per una maggiore accessibilità del sito agli utenti con differenti disabilità e ai motori di ricerca è stata mantenuta la saparazione tra struttura, presentazione e comportamento. La prima e stata sviluppata tramite documenti XHTML Strict 1.0 e HTML5, i quali richiamano i fogli di stile esterni CSS che implementano la presentazione e script esterni di JavaScript che ne implementano il comportamento. Quest'ultimo garantisce una trasformazione elegante del sito, poichè se disabilitato il contenuto rimane comunque accessibile (vedi voce comportamento). Tutto il codice redatto è stato scritto secondo le raccomandazioni W3C, accertando che fossero state rispettate tramite validazione (vedi voce validazione). Si è evitato l'uso di tag e attributi deprecati.
+
+Si è cercato il più possibie di utilizzare colori accessibili per persone con disabilità visive e affette da daltonismo e mai si è fatto riferemento ad un colore per accedere ad un contenuto del sito. I test effettuati con il sito http://www.vischeck.com/ ____
+
+Sono stati inseriti per ogni pagina i tag meta: Content-Type, keywords, description, author e languages e il tag title, il quale descrive la pagina corrente dal particolare al generale.
+Il tag languages indica che il sito è stato interamente scritto in italiano ma compaiono alcune parole inglesi, le quali sono state affiancate dall'attributo: "xml:lang="en"".
+Essendo il sito dedicato ad un arte marziale cinese compaiono inevitabilmente alcuni vocaboli cinesi, scritti comunque in latino, i quali sono stati segnalati agli screen reader tramite uno <span title=""></span>, dove all'interno dell'attributo title è stata scritta la pronucia del vocabolo cinese. 
+
+Per ogni pagina sono stati ridefiniti i tabindex. Ad ogni pressione del tasto tab il focus si sposta sul link direttamente successivo per agevolare la navigazione, in particolare nel nav.  
+
+Ogni foto di contenuto è stata arricchita di attributi alt e title che descrivono in maniera esaustiva ciò che l'immagine ritrae. Per le immagini che sono state ritenute non di contenuto, e che sono così state inserite tramite CSS, non è stato previsto l'uso di questi attributi, ritenendo la loro unica funzione quella di abbellimento, non portando informazione utile per la pagina.
+
+Ogni campo di una form è stato sempre corredato con una ettichetta (label) e le varie voci sono state sempre raggruppate in fieldset.
+
+\section{Usabilità}
+
+\section{Validazione}
+
+Per la validazione dei file XML è stato usato WebStorm, un IDE che tra le varie funzionalità offre la validazione di un file XML rispetto ad un XMLSchema e inoltre segnala se il file su cui si sta lavorando è ben formato o meno.\\
+
+Per quanto riguarda le pagine HTML è stato usato WebStorm per verificare che il codice fosse ben formato già durante la scrittura della pagina e successivamente è stato usato il validatore messo a disposizione dal W3C per assicurasi che il codice HTML prodotto fosse anche valido.\\
+
+Per il codice prodotto dagli script \texttt{.cgi} è stato usato il validatore W3C.
+
+
+
+\end{document}

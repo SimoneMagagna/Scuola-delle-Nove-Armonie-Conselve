@@ -1,0 +1,44 @@
+\section{Comportamento}\label{js}
+
+Un aspetto importante studiato per la realizzazione di questo progetto è stata l'idea di trasmettere all'utente del sito una sensazione di pulizia dei contenuti e semplicità d'utilizzo.\\
+Per realizzare l'ultimo aspetto e risolvere le criticità dovute all'inserimento dell'input utente, è stata presa in considerazione la tecnologia JavaScript: volevamo rendere la validazione dei form e l'eventuale segnalazione di eventuali errori immediata, per consentire all'utente di risolvere tutte le sue esigenze di interazione in maniera rapida.\\
+Sono state quindi create delle funzioni di validazione per ogni form del sito, queste funzioni sono memorizzate negli omonimi file \texttt{.js}.\\ 
+%
+%I 2 form principali del sito, per i quali si è resa necessaria la creazione di funzioni dedicate di validazione dell'input, sono quello per l'inserimento di nuovi utenti e quello per l'inserimento di nuove news. Viene inoltre effettuato un controllo sui campi del form per il login e per l'inserimento di una nuova immagine.\\
+%Le funzioni si trovano su file \texttt{.js} esterni e sono incluse alla fine delle pagine html interessate.\\
+Per l'inserimento delle foto non viene imposto alcun vincolo, viene però controllato che sia stata selezionata almeno l'immagine di dimensioni normali, in questo modo, si evita di inviare al server una richiesta inutile.\\
+Ogni pagina con inserimento input ha un'area destinata alla visualizzazione errori, realizzata con un \texttt{div} vuoto “errorBox”, il cui contenuto all'occorrenza viene riempito con la lista errori.\\
+L'evento scatenante scelto, a cui sono associate le funzioni di validazione, è l'evento \texttt{onsubmit}: quando un form viene inviato viene ritornato il valore della corrispondente funzione di validazione JavaScript; se questo valore è \texttt{false} significa che sono stati rivelati uno (o più) errori, che vengono visualizzati nell'apposita area; l'invio al server è abortito.
+In caso contrario la funzione ritorna \texttt{true} e quindi il form viene inviato al server.\\
+Nello specifico:
+\begin{itemize}
+\item \texttt{validateFormNews}: legge il campo titolo della news e verifica non sia vuoto. In questo caso permette l’invio al server;
+\item \texttt{validateFormUtente}: legge tutti i campi testuali di inserimento utente e verifica non siano vuoti. Per la password verifica anche sia di almeno 4 caratteri, mentre per la mail controlla anche sia nel formato giusto. Per farlo si serve di una funzione di supporto \texttt{isMail}, che restituisce se l'indirizzo di posta passato come parametro è nel formato corretto;
+\item \texttt{validateFormLogin}: esegue dei controlli analoghi a quelli effettuati da \texttt{valdiateFormUtente};
+\item \texttt{validateFormImmagini}: verifica che l'utente abbia inserito almeno la foto di dimensione normale.  
+\end{itemize}
+
+\subsection{Fresco.js}\label{fresco}
+
+Per la galleria fotografica si è scelto di puntare sull'estetica e di utilizzare il plug-in di uno dei framework JavaScript ormai sempre più utilizzati: jQuery.
+Fresco è un plug-in realizzato da Nick Stakenburg, permette di visualizzare gallerie di immagini partendo da un immagine del sito in formato ridotto e di ingrandirla a tutto schermo, ma anche di creare vere e proprie gallerie scorrevoli con una comoda interfaccia grafica a frecce. \\
+Per le esigenze della scuola di arti marziali, la versione Light gratuita è sufficiente, ed è quella utilizzata.\\ 
+Il software viene fornito incluso del file core \texttt{fresco.js}, comprendente tutte le funzioni base dipendenti da jQuery, del proprio file di stile CSS \texttt{fresco.css} e di tutte le immagini utilizzate per realizzare l'interfaccia grafica.\\
+L'installazione si basa sull'inclusione del pacchetto jQuery base, inserito nella sua versione compressa (min) e prelevato direttamente online: in questo modo la pagina caricherà automaticamente sempre l'ultima versione disponibile.\\
+I 2 file (\texttt{.js} e \texttt{.css}) di Fresco sono inclusi subito dopo, per tutte le pagine che ne fanno uso.\\
+Quindi è sufficiente assegnare la classe \texttt{fresco} alle immagini interessate, ed è possibile renderle parte di una stessa gallery fotografica assegnando valori uguali per l'attributo \texttt{data-fresco-group}.\\
+Questo plug-in è realizzato per essere completamente compatibile con la versione 5 di HTML mentre non supporta pienamente versioni precedenti, con cui abbiamo riscontrato problemi di validazione.
+Per questo motivo abbiamo realizzato tutte le pagine che lo utilizzano in HTML5.
+
+\subsection{Backstretch.js}\label{bs}
+
+Un altro plug-in jQuery fondamentale per la componente estetica del sito è Backstretch, realizzato da Scott Robbin e utilizzabile liberamente.\\
+Il comportamento di questo plug-in è quello di adattare un'immagine per poterla utilizzare come sfondo di una pagina, e di rendere l'intero contenuto scorrevole sull'immagine di sfondo stessa, che rimane fissa.\\
+L'installazione è pressoché molto simile a quella di fresco, ma in questo caso il plug-in richiede di scegliere l'immagine da utilizzare come sfondo.
+
+
+
+
+
+
+

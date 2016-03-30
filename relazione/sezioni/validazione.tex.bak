@@ -1,0 +1,49 @@
+\section{Validazione e Test}
+
+Per garantire che il sito sia correttamente visualizzato e che rimanga accessibile sul maggior numero di browser possibili si è verificata la validità di tutte le pagine, sia quelle statiche che quelle generate dal Perl, e sono stati effettuati dei test di visualizzazione su browser meno recenti.
+
+\subsection{Validazione}\label{valid}
+
+Per la validazione dei file XML è stato usato WebStorm\footnote{\url{https://www.jetbrains.com/webstorm/}}, un IDE che tra le varie funzionalità offre la validazione di un file XML rispetto ad un XMLSchema e inoltre segnala se il file su cui si sta lavorando è ben formato o meno.\\
+Per quanto riguarda le pagine HTML è stato usato WebStorm per verificare che il codice fosse ben formato già durante la scrittura della pagina e successivamente è stato usato il validatore messo a disposizione dal W3C\footnote{\url{http://validator.w3.org/}} per assicurasi che il codice HTML prodotto fosse anche valido.\\
+Per il codice prodotto dagli script \texttt{.cgi} è stato usato il validatore W3C.
+Sono stati inoltre validati anche i CSS del sito, sfruttando il validatore offerto dal W3C\footnote{\url{https://jigsaw.w3.org/css-validator/}}.
+\subsection{Test}
+
+Sfruttando il servizio offerto da BrowserStack\footnote{\url{http://www.browserstack.com/}}, è stato testato il sito su browser meno recenti per vedere se il contenuto rimaneva accessibile. \\
+Tutti i test sono stati eseguiti su una macchina virtuale con Windows 7 come sistema operativo, e sui seguenti browser:
+\begin{itemize}
+\item \textbf{Internet Explorer 8:} Non completamente supportato, il contenuto rimane accessibile:
+\begin{itemize}
+\item La trasparenza non viene visualizzata correttamente, è stato inserito un sistema di fallback che visualizza lo sfondo bianco;
+\item I bordi non vengono visualizzati arrotondati;
+\item Viene visualizzato il bordo del link attorno al logo;
+\item Il CSS per le risoluzioni inferiori non viene attivato.
+\end{itemize}
+
+\item \textbf{Internet Explorer 6 \& 7 su Windows XP:} Scarsamente supportato, maggiori difficoltà di lettura del testo:
+\begin{itemize}
+\item La trasparenza non viene visualizzata correttamente e il sistema di fallback non funziona;
+\item I bordi non vengono visualizzati arrotondati;
+\item Viene visualizzato il bordo del link attorno al logo;
+\item Il CSS per le risoluzioni inferiori non viene attivato;
+\item La navbar viene mostrata in verticale anziché in orizzontale.
+\end{itemize}
+
+\item \textbf{Firefox 3.6:} Non completamente supportato, il contenuto rimane accessibile:
+\begin{itemize}
+\item Non viene scaricato il font personalizzato;
+\item Non tutti i bordi vengono mostrati arrotondati. 
+\end{itemize}
+
+\item \textbf{Chrome 14:} Sito renderizzato correttamente;
+
+\item \textbf{Safari 4:} Sito renderizzato correttamente;
+
+\item \textbf{Opera 10.4:} Non completamente supportato, il contenuto rimane accessibile:
+\begin{itemize}
+\item Non viene scaricato il font personalizzato;
+\item Non vengono visualizzate le immagini decorative.
+\end{itemize}
+
+\end{itemize}

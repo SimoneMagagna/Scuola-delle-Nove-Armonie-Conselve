@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns="http://www.9armonie.com/immagini"
+		   targetNamespace="http://www.9armonie.com/immagini"
+		   elementFormDefault="qualified">
+
+	<xs:element name="immagini" type="TipoImmagini"/>
+
+	<xs:complexType name="TipoImmagini">
+		<xs:sequence maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="immagine" type="TipoImmagine"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="TipoImmagine">
+		<xs:sequence>
+			<xs:element name="src" type="xs:anyURI"/>
+			<xs:element name="src_small" type="xs:anyURI"/>
+			<xs:element name="alt" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

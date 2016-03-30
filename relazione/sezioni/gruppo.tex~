@@ -1,0 +1,32 @@
+\section{Organizzazione del gruppo}
+Il lavoro sul progetto in esame è stato così distribuito:
+
+Simone Magagna:
+- recupero dei contenuti (testi, immagini e foto)
+- creazione dei file HTML
+- creazione del file main.css
+- progettazione dei file XML, XMLSchema e XSLT
+- stesura delle sezioni Abstract, Utenti destinatari, Accessibilità, Usabilità, Gerarchia dei file e Struttura nella relazione
+
+Giacomo Manzoli
+- lavoro sui file HTML
+- lavoro sul file main.css e creazione dei file mobile.css e print.css
+- lavoro sui file XML, XMLSchema e XSLT
+- creazione dei file Perl
+- validazione del codice
+- stesura delle sezioni Presentazione, Divisione dei file, Gestione dei dati, Perl e Validazione nella realzione
+
+Andrea Rettore
+- lavoro sui file HTML
+- lavoro sul file main.css
+- progettazione e creazione dei file XML, XMLSchema e XSTL
+- creazione dei file Perl
+
+Manuel Sgaravato
+- lavoro sui file HTML
+- lavoro sul file .css
+- creazione delle funzionalità JavaScript del sito
+- stesura della sezione Comportamento nella relazione
+
+
+

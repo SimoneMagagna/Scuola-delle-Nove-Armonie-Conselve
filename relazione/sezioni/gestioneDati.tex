@@ -1,0 +1,18 @@
+\section{Gestione dei dati}
+
+Il sito presenta 3 tipi di contenuti che possono essere modificati da parte dagli utenti autorizzati:
+\begin{itemize}
+\item \textbf{Immagini}: le foto che vengono visualizzate nella galleria fotografica;
+\item \textbf{News}: le notizie che vengono mostrate sia nell'homepage sia nell'apposita sezione;
+\item \textbf{Utenti}: gli amministratori del sito possono gestire gli utenti autorizzati a modificare i contenuti dinamici del sito.
+\end{itemize}
+Questi dati vengono memorizzati negli omonimi file \texttt{.xml} presenti nella cartella \texttt{data}.
+
+\subsection{XMLSchema}
+Per verificare la validità dei dati sono stati creati degli appositi XMLSchema che definisco i vari tag che possono comparire nei file \texttt{.xml} e, quando necessario, i vincoli di unicità. \\
+Gli schemi \texttt{utenti.xsd} e \texttt{news.xsd} definiscono infatti, dei vincoli di unicità per gli id degli elementi e, nel caso degli utenti, viene definito anche il vincolo di unicità dell'indirizzo email.
+
+\subsection{XSLT}
+Per visualizzare il contenuto erano stati crearti dei template XSLT, tuttavia è risultato più pratico fare la conversione da XML a HTML sfruttando il gli script Perl e di conseguenza non sono stati usati.
+
+

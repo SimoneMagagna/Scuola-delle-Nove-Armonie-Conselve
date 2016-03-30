@@ -1,0 +1,22 @@
+\section{Presentazione} 
+
+Nella realizzazione dell'interfaccia grafica del sito è stato usato lo standard CSS3, tuttavia, per cercare di mantenere un buon livello di compatibilità con i browser più datati si è cercato di utilizzare un numero ristretto delle nuove funzionalità offerte da questo standard.\\
+Le principali funzionalità offerte dallo standard CSS3 sono:
+\begin{itemize}
+\item \textbf{Immagini di sfondo:} Le immagini decorative sono state messe come sfondo di \texttt{<div>} vuoti, in questo non vengono rilevate dagli screen reader;
+\item \textbf{Bordi arrotondati:} Per realizzare l'interfaccia grafica si è scelto di disegnare la navbar e alcuni \texttt{<div>} con i bordi arrotondati. Per aumentare il numero di browser che supportano questo tipo di bordi sono stati utilizzati anche i prefissi: \texttt{-webkit-} e \texttt{-moz-};
+\item \textbf{@font-face:} Per utilizzare il font personalizzato nei titoli. Per aumentare il numero di browser compatibili, il font viene fornito in più formati e nel caso il browser dell'utente non supporti questa funzionalità, è stato previsto l'utilizzo di un font secondario standard.
+\end{itemize}
+
+
+
+\subsection{Divisione dei file}
+
+Nella cartella \texttt{public$\_$html/css} sono presenti i seguenti fogli di stile:
+\begin{itemize}
+\item \texttt{main.css}: modella lo stile di visualizzazione del sito per utente desktop;
+\item \texttt{mobile.css}: modella lo stile di visualizzazione del sito per utente mobile;
+\item \texttt{print.css}: modella lo stile di stampa delle pagine del sito;
+\item \texttt{amministratore.css}: modella lo stile di visualizzazione delle pagine a cui potrà accedere solo lo staff;
+\item \texttt{fresco.css}: contiene le informazioni riguardo lo stile del visualizzatore d'immagini scelto per implementare la galleria, maggiori informazioni si possono trovare alla sezione \ref{js}.
+\end{itemize}

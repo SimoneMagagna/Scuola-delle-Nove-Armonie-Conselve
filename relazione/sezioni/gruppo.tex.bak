@@ -1,0 +1,45 @@
+\section{Organizzazione del gruppo}
+Il lavoro sul progetto in esame è stato così distribuito:
+\begin{itemize}
+\item \textbf{Simone Magagna:}
+\begin{itemize}
+\item recupero dei contenuti (testi, immagini e foto);
+\item creazione dei file HTML;
+\item creazione del file \texttt{main.css};
+\item progettazione dei file XML e XMLSchema;
+\item stesura delle sezioni Abstract, Utenti destinatari, Accessibilità, Usabilità, Gerarchia dei file e Struttura nella relazione.
+\end{itemize}
+
+\item \textbf{Giacomo Manzoli:}
+\begin{itemize}
+\item Lavoro sui file HTML;
+\item Lavoro sul file \texttt{main.css} e creazione dei file \texttt{mobile.css}, \texttt{print.css} e \texttt{amministrazione.css};
+\item Lavoro sui file XML e XMLSchema;
+\item Creazione dei file Perl;
+\item Validazione del codice;
+\item Stesura delle sezioni Presentazione, Divisione dei file, Gestione dei dati, Perl e Validazione nella relazione.
+\end{itemize}
+
+
+\item \textbf{Andrea Rettore:}
+\begin{itemize}
+\item Lavoro sui file HTML;
+\item Lavoro sul file \texttt{main.css};
+\item Progettazione e creazione dei file XML e XMLSchema;
+\item Creazione dei file Perl;
+\end{itemize}
+
+
+\item \textbf{Manuel Sgaravato:}
+\begin{itemize}
+\item Lavoro sui file HTML;
+\item Lavoro sul file \texttt{.css};
+\item Creazione delle funzionalità JavaScript del sito;
+\item Stesura della sezione Comportamento nella relazione.
+\end{itemize}
+
+\end{itemize}
+
+
+
+
